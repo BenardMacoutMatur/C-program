@@ -1,0 +1,36 @@
+#include <iostream>
+//input output stream in th iostream.
+
+int main()
+{
+    int mrks;
+    std::cout<<"Enter the marks of the student? ";
+    std::cin>>mrks;
+    std::cout<<"The marks of the student are \n"<<mrks;
+
+    if (mrks>0 && mrks<40)
+    {
+        std::cout<<"The student got an E, thus failed in the exam.";
+    }
+    else if (mrks>40 && mrks<50)
+    {
+        std::cout<<"The student got a D";
+    }
+    else if (mrks>50 && mrks<60)
+    {
+        std::cout<<"The student got a C";
+    }
+    else if (mrks>60 && mrks<70)
+    {
+        std::cout<<"The student got a B";
+    }
+    else if (mrks > 70 && mrks < 100)
+    {
+        std::cout<<"The student got an A congratulations";
+    }
+    else
+    {
+        std::cout << "The results are inconclusive";
+    }
+    return 0;
+}
